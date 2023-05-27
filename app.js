@@ -9,7 +9,7 @@ app.use("/api/v1/todo", routes);
 
 const start = async () => {
   try {
-    await connectDB("mongodb+srv://SMsys:smSYS@cluster0.5lvkd.mongodb.net/20-JOBIFY?retryWrites=true&w=majority");
+    await connectDB("");
     app.listen(port, () => {
       console.log(`Server is up and running on port ${port}...`);
     });
